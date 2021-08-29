@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textview_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="@string/initial_title"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button_login"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/button_login"
+                app:layout_constraintEnd_toEndOf="@+id/textview_title"
+                app:layout_constraintStart_toStartOf="@+id/textview_title"
+                app:layout_constraintTop_toBottomOf="@+id/textview_title" />
+
+            <Button
+                android:id="@+id/button_logout"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/button_logout"
+                android:enabled="false"
+                app:layout_constraintEnd_toEndOf="@+id/textview_title"
+                app:layout_constraintStart_toStartOf="@+id/textview_title"
+                app:layout_constraintTop_toBottomOf="@+id/button_login" />
+
+            <TextView
+                android:id="@+id/textview_user_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button_logout"
+                android:layout_margin="18dp"/>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_metadata"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_user_profile">
+
+                <TextView
+                    android:id="@+id/textview_metadata_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/textview_metadata_heading"/>
+
+                <TextView
+                    android:id="@+id/textview_metadata_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="8dp"
+                    android:textAlignment="center"
+                    android:text="@string/textview_metadata_info"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/edittext_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter country" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/button_get"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/button_get"
+                        android:layout_marginRight="8dp"/>
+
+                    <Button
+                        android:id="@+id/button_set"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/button_set"
+                        android:layout_marginLeft="8dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Login</string>
+
+    <!--
+
+    Auth0 identifiers and settings
+    ==============================
+
+    -->
+
+    <!-- Identifiers -->
+    <string name="com_auth0_client_id">VdNFtvZptbyK3EqTaIOXIbg7IpltySkt</string>
+    <string name="com_auth0_domain">dev-vke2wo15.us.auth0.com</string>
+    <string name="com_auth0_scheme">app</string>
+
+    <!-- Settings -->
+    <string name="login_scopes">openid profile email read:current_user update:current_user_metadata</string>
+    <string name="login_audience">https://%1$s/api/v2/</string>
+
+
+    <!--
+
+    Main activity
+    =============
+
+    -->
+
+    <!-- Title -->
+    <string name="initial_title">Welcome to the app!</string>
+    <string name="logged_in_title">You\'re logged in.</string>
+    <string name="logged_out_title">You\'re logged out.</string>
+
+    <!-- "Log in" and "Log out" buttons -->
+    <string name="button_login">Log in</string>
+    <string name="button_logout">Log out</string>
+
+    <!-- User profile -->
+    <string name="user_profile">
+        Name: %1$s\n
+        Email: %2$s
+    </string>
+
+    <!-- Metadata -->
+    <string name="textview_metadata_heading">Metadata</string>
+    <string name="textview_metadata_info">Use the text box and buttons below to get and set the \'country\' field in the user\'s metadata.</string>
+
+    <!-- "Get" and "Set" buttons -->
+    <string name="button_get">Get</string>
+    <string name="button_set">Set</string>
+
+    <!-- SnackBar messages-->
+    <string name="login_success_message">Successfully logged in! %1$s</string>
+    <string name="login_failure_message">Failed to log in. %1$s</string>
+    <string name="general_failure_with_exception_code">Failed - exception code: %1$s</string>
+    <string name="general_success_message">Success!</string>
+
+</resources>
