@@ -9,8 +9,8 @@
     -->
 
     <!-- Identifiers -->
-    <string name="com_auth0_client_id">VdNFtvZptbyK3EqTaIOXIbg7IpltySkt</string>
-    <string name="com_auth0_domain">dev-vke2wo15.us.auth0.com</string>
+    <string name="com_auth0_client_id"><!-- Your app’s client ID goes here --></string>
+    <string name="com_auth0_domain"><!-- Your tenant’s domain goes here --></string>
     <string name="com_auth0_scheme">app</string>
 
     <!-- Settings -->
