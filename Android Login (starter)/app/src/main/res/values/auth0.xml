@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    Auth0 identifiers and settings
+    ==============================
+    These values are required to connect to Auth0 for authorization,
+    which is why we're storing them in their own string resource file.
+    -->
+
+    <string name="com_auth0_scheme">TODO: Enter the scheme for your app’s callback and logout URLs here.</string>
+
+    <string name="com_auth0_domain">TODO: Enter your tenant’s domain name here.</string>
+    <string name="com_auth0_client_id">TODO: Enter your app’s client ID here.</string>
+
+</resources>
